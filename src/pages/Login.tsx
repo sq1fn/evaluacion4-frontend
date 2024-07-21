@@ -6,9 +6,10 @@ import { Button, Form } from "react-bootstrap";
 const Login = () => {
   // Variable de estado para almacenar el nombre de usuario
   const [Usuario, setUsuario] = useState(""); 
-  
+
   // Variable de estado para almacenar la contraseña
-  const [Contrasena, setContrasena] = useState(""); 
+  const [Contrasena, setContrasena] = useState("");
+
   // Función para validar las credenciales del usuario
   const validarUsuario = () => {
     if (Usuario === "admin") {
@@ -27,6 +28,7 @@ const Login = () => {
       alert("Usuario y contraseña incorrectos"); 
     }
   };
+  
   // Hook para la navegación entre páginas
   const router = useRouter();
 
@@ -35,8 +37,8 @@ const Login = () => {
     setUsuario(e.currentTarget.value);
   };
 
-  // Función para actualizar el estado de la contraseña
-  const guardarContraseña = (e: any) => {
+  // Función que actualiza el estado de la contraseña 
+  const guardarContrasena = (e: any) => {
     setContrasena(e.currentTarget.value);
   };
 
@@ -60,7 +62,7 @@ const Login = () => {
             placeholder="Ingrese su contraseña"
             value={Contrasena}
             onChange={(c) => {
-              guardarContraseña(c);
+              guardarContrasena(c);
             }}
           />
         </Form.Group>
