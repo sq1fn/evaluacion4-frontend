@@ -15,7 +15,7 @@ const Login = () => {
     if (Usuario === "admin") {
       if (Contrasena === "admin") {
         // Se redirige a la página del menú principal
-        router.push("/MenuPrincipal"); 
+        router.push("/Home"); 
       } else {
         // Se muestrar una alerta para contraseña incorrecta
         alert("Contraseña incorrecta"); 

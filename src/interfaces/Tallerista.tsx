@@ -1,3 +1,5 @@
+import { Taller } from "./Taller";
+
 export interface Tallerista {
     nombre: string;
     apellido: string;
@@ -5,6 +7,4 @@ export interface Tallerista {
     correo: string;
     ocupacion: string;
     biografia: string;
-    numero_talleres: number;   
-    key?: string;
 }

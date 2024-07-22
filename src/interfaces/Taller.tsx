@@ -1,8 +1,8 @@
 export interface Taller {
     titulo: string;
     tematica: string;
-    fecha_inicio: Date;
-    fecha_termino: Date;
+    fecha_inicio: string;
+    fecha_termino: string;
     tallerista: string;
     cuposDisponibles: number;
     descripcion: string;
