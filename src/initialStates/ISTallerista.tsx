@@ -7,5 +7,4 @@ export const initialStateTallerista: Tallerista = {
     correo: '',
     ocupacion: '',
     biografia: '',
-    numero_talleres: 0,
 }
